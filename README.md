@@ -1,6 +1,6 @@
-# Qwen UCF-Crime Labeling
+# Zero Shot Action Recognition
 
-This project is being set up for Qwen-based labeling on the UCF-Crime dataset.
+This project explores diffrent approaches to zero shot video action recogntion. 
 
 ## Setup
 
