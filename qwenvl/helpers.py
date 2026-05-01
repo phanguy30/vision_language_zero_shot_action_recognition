@@ -68,13 +68,13 @@ def run_inference(model, processor, images, prompt="Describe the action in this 
     """Handles the Qwen-VL conversation and generation logic."""
     
     # 1. Downsize using your helper
-    downsized = downsize_clip(images, fps=1)
+    
     
     # 2. Format Messages
     messages = [{
         "role": "user",
         "content": [
-            {"type": "video", "video": downsized, "fps": 1.0},
+            {"type": "video", "video": images, "fps": 1.0},
             {"type": "text", "text": prompt},
         ],
     }]
