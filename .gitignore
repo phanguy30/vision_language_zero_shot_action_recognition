@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+
+runs/
+data/ucf-crime/*
+data/processed/*
+
+!data/ucf-crime/.gitkeep
+!data/processed/.gitkeep
+
+
+*.__pycache__/
+

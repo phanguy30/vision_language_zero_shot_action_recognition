@@ -1,0 +1,22 @@
+# Core data handling
+numpy
+pandas
+pyyaml
+tqdm
+
+
+# Video and image IO
+opencv-python
+pillow
+
+# Modeling and evaluation
+scikit-learn
+torch
+torchvision
+transformers
+accelerate
+qwen-vl-utils
+
+# Dataset utilities
+datasets
+huggingface-hub
