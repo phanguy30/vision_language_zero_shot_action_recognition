@@ -9,7 +9,7 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 | Method | Accuracy | Inference Time (Avg) | Approach Type |
 | :--- | :--- | :--- | :--- |
 | **SP-CLIP** | **73.22%** | **0.03s** / frame | Semantic Decomposition |
-| **Qwen-VL** | 65.90% | 1.35s / clip | VLM Direct Prompting |
+| **Qwen-VL** | 65.90% | 0.23s / frame | VLM Direct Prompting |
 
 ---
 
