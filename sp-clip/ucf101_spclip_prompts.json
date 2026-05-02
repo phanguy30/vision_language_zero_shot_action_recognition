@@ -1,0 +1,507 @@
+{
+    "ApplyEyeMakeup": {
+        "intent": "A person carefully applying cosmetic products around their eyes to enhance their appearance.",
+        "motion": "Small, precise hand movements using an applicator or brush near the eye area.",
+        "object": "Mascara, eyeliner, eye shadow, and a mirror."
+    },
+    "ApplyLipstick": {
+        "intent": "A person applying color or balm to their lips using a cosmetic stick.",
+        "motion": "A gentle gliding motion of the hand across the upper and lower lips.",
+        "object": "A tube of lipstick, lip balm, and a mirror."
+    },
+    "Archery": {
+        "intent": "A person aiming to hit a distant target with precision.",
+        "motion": "A slow tensioning of the arms followed by a sudden release.",
+        "object": "A bow, an arrow, and a circular target board."
+    },
+    "BabyCrawling": {
+        "intent": "An infant moving forward across a surface on their hands and knees.",
+        "motion": "Alternating movements of the limbs in a rhythmic, crawling fashion.",
+        "object": "A flat floor, carpet, or play mat."
+    },
+    "BalanceBeam": {
+        "intent": "A gymnast performing artistic movements while maintaining balance on a narrow elevated beam.",
+        "motion": "Graceful walking, jumping, and spinning movements on a narrow surface.",
+        "object": "A padded balance beam and a gymnastics floor mat."
+    },
+    "BandMarching": {
+        "intent": "A group of musicians playing instruments while walking in a coordinated formation.",
+        "motion": "Synchronized high-stepping or rhythmic walking while holding and playing instruments.",
+        "object": "Musical instruments like trumpets, drums, and trombones, and uniforms."
+    },
+    "BaseballPitch": {
+        "intent": "A baseball player throwing a ball towards a batter with force and accuracy.",
+        "motion": "A wind-up motion followed by a powerful overhand or sidearm throw.",
+        "object": "A baseball, a pitcher's mound, and a glove."
+    },
+    "Basketball": {
+        "intent": "A person shooting a basketball toward a hoop to score points.",
+        "motion": "A jumping motion or set shot involving an overhead release of the ball.",
+        "object": "A basketball, a hoop, and a backboard."
+    },
+    "BasketballDunk": {
+        "intent": "A basketball player jumping high to forcefully put the ball directly through the hoop.",
+        "motion": "A powerful leap toward the rim followed by a downward thrust of the ball.",
+        "object": "A basketball, a hoop, and a rim."
+    },
+    "BenchPress": {
+        "intent": "A person lifting a weighted barbell upwards while lying on a flat bench.",
+        "motion": "Lowering the barbell to the chest and then pushing it back up to arm's length.",
+        "object": "A barbell, weight plates, and a weight bench."
+    },
+    "Biking": {
+        "intent": "A person riding a bicycle for exercise, transportation, or sport.",
+        "motion": "A continuous pedaling motion of the legs while steering with the arms.",
+        "object": "A bicycle, a helmet, and a road or trail."
+    },
+    "Billiards": {
+        "intent": "A person using a cue stick to strike balls into pockets on a pool table.",
+        "motion": "A precise forward thrust of the cue stick towards the cue ball.",
+        "object": "A pool table, billiard balls, and a cue stick."
+    },
+    "BlowDryHair": {
+        "intent": "A person using a handheld hair dryer to dry or style their hair.",
+        "motion": "Moving a hair dryer back and forth while running a hand or brush through the hair.",
+        "object": "A handheld hair dryer and a hairbrush."
+    },
+    "BlowingCandles": {
+        "intent": "A person exhaling air to extinguish lit candles, typically on a cake.",
+        "motion": "Taking a deep breath and then leaning forward to blow air through pursed lips.",
+        "object": "Lit candles and often a birthday cake."
+    },
+    "BodyWeightSquats": {
+        "intent": "A person performing a lower-body exercise by lowering and raising their hips.",
+        "motion": "Bending the knees and hips to lower the body into a sitting position and then standing back up.",
+        "object": "An open floor space."
+    },
+    "Bowling": {
+        "intent": "A person rolling a heavy ball down a lane to knock down pins.",
+        "motion": "A smooth approach followed by a low, sweeping underhand release of the ball.",
+        "object": "A bowling ball, a bowling lane, and ten pins."
+    },
+    "BoxingPunchingBag": {
+        "intent": "A person striking a heavy punching bag for training or exercise.",
+        "motion": "A series of rhythmic punches including jabs, hooks, and crosses.",
+        "object": "Boxing gloves and a heavy punching bag."
+    },
+    "BoxingSpeedBag": {
+        "intent": "A person hitting a small, fast-rebounding punching bag to develop rhythm and speed.",
+        "motion": "Rapid, rhythmic circular motions of the fists striking the small bag.",
+        "object": "Boxing gloves or hand wraps and a speed bag."
+    },
+    "BreastStroke": {
+        "intent": "A swimmer moving through the water using the breaststroke technique.",
+        "motion": "Simultaneous circular motions of the arms and a frog-like kick of the legs.",
+        "object": "A swimming pool and swimming goggles."
+    },
+    "BrushingTeeth": {
+        "intent": "A person cleaning their teeth using a toothbrush and toothpaste.",
+        "motion": "Repetitive back-and-forth or circular scrubbing motions with the hand.",
+        "object": "A toothbrush, toothpaste, and a sink."
+    },
+    "CleanAndJerk": {
+        "intent": "A weightlifter lifting a heavy barbell from the floor to overhead in two stages.",
+        "motion": "A powerful pull to the shoulders followed by a sudden overhead thrust.",
+        "object": "A barbell, heavy weight plates, and a lifting platform."
+    },
+    "CliffDiving": {
+        "intent": "A person jumping from a high cliff into a body of water below.",
+        "motion": "Leaping off a high edge followed by an acrobatic fall and a feet-first or head-first entry.",
+        "object": "A high cliff and a body of water like the ocean or a lake."
+    },
+    "CricketBowling": {
+        "intent": "A cricket player delivering the ball to the batter with a straight-arm motion.",
+        "motion": "A running approach followed by a 360-degree rotation of the arm and ball release.",
+        "object": "A cricket ball, a pitch, and wickets."
+    },
+    "CricketShot": {
+        "intent": "A batsman hitting a cricket ball with a bat to score runs.",
+        "motion": "A controlled swing of the bat to strike an incoming ball.",
+        "object": "A cricket bat and a cricket ball."
+    },
+    "CuttingInKitchen": {
+        "intent": "A person using a knife to slice or chop food on a cutting board.",
+        "motion": "A repetitive downward or rocking motion of the knife-wielding hand.",
+        "object": "A kitchen knife, food items, and a cutting board."
+    },
+    "Diving": {
+        "intent": "A person jumping from a springboard or platform into a pool with acrobatic form.",
+        "motion": "A springy takeoff followed by flips or twists and a clean entry into the water.",
+        "object": "A diving board and a swimming pool."
+    },
+    "Drumming": {
+        "intent": "A musician playing a drum set by striking the drums and cymbals.",
+        "motion": "Rapid, rhythmic striking motions with drumsticks or pedals.",
+        "object": "A drum set, drumsticks, and cymbals."
+    },
+    "Fencing": {
+        "intent": "Two athletes competing in a sword-fighting sport using foils or epees.",
+        "motion": "Quick, agile lunges, parries, and thrusts with a thin sword.",
+        "object": "Fencing swords, protective masks, and white suits."
+    },
+    "FieldHockeyPenalty": {
+        "intent": "A field hockey player taking a penalty shot toward the goal.",
+        "motion": "A powerful swing of the hockey stick to hit the ball past a goalkeeper.",
+        "object": "A field hockey stick, a ball, and a goal net."
+    },
+    "FloorGymnastics": {
+        "intent": "A gymnast performing a routine of acrobatic and dance moves on a padded floor.",
+        "motion": "Tumbling, flipping, and spinning across a large mat with grace.",
+        "object": "A large gymnastics floor mat."
+    },
+    "FrisbeeCatch": {
+        "intent": "A person catching a flying disc thrown by another person or from the air.",
+        "motion": "Reaching out with one or both hands to grab a spinning disc.",
+        "object": "A frisbee (flying disc)."
+    },
+    "FrontCrawl": {
+        "intent": "A swimmer moving through the water using the freestyle or front crawl stroke.",
+        "motion": "Alternating overhand arm strokes and a continuous flutter kick.",
+        "object": "A swimming pool and a swim cap."
+    },
+    "GolfSwing": {
+        "intent": "A golfer hitting a golf ball with a club toward a distant hole.",
+        "motion": "A full-body rotation and a smooth, powerful swing of the golf club.",
+        "object": "A golf club, a golf ball, and a tee."
+    },
+    "Haircut": {
+        "intent": "A person getting their hair trimmed or styled by a barber or stylist.",
+        "motion": "The stylist using scissors or clippers to remove hair while the person sits still.",
+        "object": "Haircutting scissors, clippers, a comb, and a salon chair."
+    },
+    "Hammering": {
+        "intent": "A person driving a nail into a surface using a hammer.",
+        "motion": "A repetitive swinging motion of the arm, striking the nail head with the hammer.",
+        "object": "A hammer and a nail."
+    },
+    "HammerThrow": {
+        "intent": "An athlete throwing a heavy metal ball attached to a wire as far as possible.",
+        "motion": "Rapid spinning of the body followed by a powerful release of the weighted object.",
+        "object": "A hammer (throwing implement) and a throwing circle."
+    },
+    "HandstandPushups": {
+        "intent": "A person performing push-ups while in a vertical handstand position.",
+        "motion": "Lowering the head toward the ground by bending the arms and then pushing back up.",
+        "object": "A wall (for support) or open floor."
+    },
+    "HandstandWalking": {
+        "intent": "A person moving forward while balancing on their hands in an inverted position.",
+        "motion": "Alternating hand placements on the floor to walk while legs are in the air.",
+        "object": "A flat floor or gym mat."
+    },
+    "HeadMassage": {
+        "intent": "A person receiving a massage on their scalp and head for relaxation.",
+        "motion": "Gentle, rhythmic movements of the fingers and hands across the scalp.",
+        "object": "Massage oil or a head massager tool."
+    },
+    "HighJump": {
+        "intent": "An athlete jumping over a high horizontal bar using the Fosbury Flop technique.",
+        "motion": "A curved run-up followed by a backward leap over the bar.",
+        "object": "A high jump bar, two vertical standards, and a landing mat."
+    },
+    "HorseRace": {
+        "intent": "Jockeys riding horses at high speed to win a competitive race.",
+        "motion": "Horses galloping rapidly while jockeys maintain a low, forward-leaning position.",
+        "object": "Horses, saddles, a race track, and jockeys."
+    },
+    "HorseRiding": {
+        "intent": "A person riding a horse for leisure or equestrian sport.",
+        "motion": "The rider sitting on the horse and using reins to guide its pace and direction.",
+        "object": "A horse, a saddle, and reins."
+    },
+    "HulaHoop": {
+        "intent": "A person spinning a large hoop around their waist or limbs.",
+        "motion": "Rhythmic, circular movements of the hips to keep the hoop spinning.",
+        "object": "A hula hoop."
+    },
+    "IceDancing": {
+        "intent": "A pair of figure skaters performing a choreographed dance routine on ice.",
+        "motion": "Fluid, rhythmic skating movements, spins, and lifts on an ice rink.",
+        "object": "Ice skates and an ice rink."
+    },
+    "JavelinThrow": {
+        "intent": "An athlete throwing a spear-like javelin as far as possible.",
+        "motion": "A running start followed by a powerful overhand throw of the javelin.",
+        "object": "A javelin and a throwing field."
+    },
+    "JugglingBalls": {
+        "intent": "A person keeping multiple balls in the air by continuously throwing and catching them.",
+        "motion": "A rhythmic sequence of alternating hand tosses and catches.",
+        "object": "Three or more juggling balls."
+    },
+    "JumpRope": {
+        "intent": "A person jumping over a rope as it is swung over their head and under their feet.",
+        "motion": "Repetitive jumping or hopping while rotating the wrists to swing the rope.",
+        "object": "A jump rope."
+    },
+    "JumpingJack": {
+        "intent": "A person performing a jumping exercise that involves moving the arms and legs outwards.",
+        "motion": "Jumping with legs spread and arms clapping overhead, then returning to a neutral stance.",
+        "object": "An open floor space."
+    },
+    "Kayaking": {
+        "intent": "A person paddling a small, narrow boat through water.",
+        "motion": "Alternating strokes with a double-bladed paddle to propel the boat forward.",
+        "object": "A kayak and a double-bladed paddle."
+    },
+    "Knitting": {
+        "intent": "A person creating fabric by interlocking loops of yarn with needles.",
+        "motion": "Repetitive, small movements of the fingers and hands using knitting needles.",
+        "object": "Knitting needles and yarn."
+    },
+    "LongJump": {
+        "intent": "An athlete jumping as far as possible into a sand pit from a takeoff board.",
+        "motion": "A fast sprint followed by a powerful leap from one foot into a sand pit.",
+        "object": "A runway, a takeoff board, and a sand landing pit."
+    },
+    "Lunges": {
+        "intent": "A person performing a lower-body exercise by stepping forward and bending the knees.",
+        "motion": "Stepping forward into a deep bend with one leg while keeping the other leg behind.",
+        "object": "An open floor space."
+    },
+    "MilitaryParade": {
+        "intent": "Soldiers marching in a synchronized, ceremonial formation.",
+        "motion": "Uniform, rhythmic marching with high steps and swinging arms.",
+        "object": "Uniforms and often ceremonial weapons."
+    },
+    "Mixing": {
+        "intent": "A person combining ingredients in a bowl using a spoon, whisk, or mixer.",
+        "motion": "A circular or rhythmic stirring motion with the hand or a tool.",
+        "object": "A mixing bowl and a spoon or whisk."
+    },
+    "MoppingFloor": {
+        "intent": "A person cleaning a floor surface using a wet mop.",
+        "motion": "Pushing and pulling the mop across the floor in a rhythmic pattern.",
+        "object": "A mop and a bucket of water."
+    },
+    "Nunchucks": {
+        "intent": "A person swinging or spinning nunchucks in a martial arts demonstration.",
+        "motion": "Fast, rhythmic circular swings and transitions between hands.",
+        "object": "A pair of nunchucks."
+    },
+    "ParallelBars": {
+        "intent": "A gymnast performing routines on two parallel horizontal bars.",
+        "motion": "Swinging, balancing, and flipping movements supported by the arms on the bars.",
+        "object": "Two parallel bars and a gymnastics mat."
+    },
+    "PizzaTossing": {
+        "intent": "A person spinning and throwing pizza dough into the air to stretch it.",
+        "motion": "A circular spinning motion of the hands followed by an upward toss.",
+        "object": "Pizza dough."
+    },
+    "PlayingCello": {
+        "intent": "A musician playing the cello by bowing or plucking its strings.",
+        "motion": "Rhythmic movement of the bow across the strings while the other hand presses them.",
+        "object": "A cello and a bow."
+    },
+    "PlayingDaf": {
+        "intent": "A musician playing a Daf (large frame drum) by striking it with their hands.",
+        "motion": "Rhythmic striking of the drum skin and shaking the frame for jingle sounds.",
+        "object": "A Daf drum."
+    },
+    "PlayingDhol": {
+        "intent": "A musician playing a Dhol (double-headed drum) using sticks.",
+        "motion": "Powerful, rhythmic striking of both ends of the drum with sticks.",
+        "object": "A Dhol drum and two wooden sticks."
+    },
+    "PlayingFlute": {
+        "intent": "A musician playing the flute by blowing air across the mouthpiece.",
+        "motion": "Holding the flute horizontally and moving fingers to cover and uncover holes.",
+        "object": "A flute."
+    },
+    "PlayingGuitar": {
+        "intent": "A musician playing the guitar by strumming or plucking its strings.",
+        "motion": "Strumming or picking the strings with one hand while the other hand frets them.",
+        "object": "A guitar (acoustic or electric) and a pick."
+    },
+    "PlayingPiano": {
+        "intent": "A musician playing the piano by pressing its keys with their fingers.",
+        "motion": "Rhythmic pressing of piano keys with the fingers of both hands.",
+        "object": "A piano or electronic keyboard."
+    },
+    "PlayingSitar": {
+        "intent": "A musician playing the sitar by plucking its strings with a plectrum.",
+        "motion": "Plucking the strings while the other hand slides along the neck to change pitch.",
+        "object": "A sitar and a mizrab (wire plectrum)."
+    },
+    "PlayingTabla": {
+        "intent": "A musician playing a pair of Tabla drums with their hands.",
+        "motion": "Intricate, rhythmic tapping and striking of the drum heads with fingers and palms.",
+        "object": "A pair of Tabla drums."
+    },
+    "PlayingViolin": {
+        "intent": "A musician playing the violin by bowing or plucking its strings.",
+        "motion": "Moving a bow across the strings while the other hand presses them on the neck.",
+        "object": "A violin and a bow."
+    },
+    "PoleVault": {
+        "intent": "An athlete using a long flexible pole to jump over a high bar.",
+        "motion": "A sprint followed by planting the pole and swinging the body upward over the bar.",
+        "object": "A vaulting pole, a crossbar, and a landing mat."
+    },
+    "PommelHorse": {
+        "intent": "A gymnast performing circular leg movements while supported on a pommel horse.",
+        "motion": "Continuous, rhythmic circular swings of the legs while holding the pommels.",
+        "object": "A pommel horse and a gymnastics mat."
+    },
+    "PullUps": {
+        "intent": "A person pulling their body weight up to a horizontal bar.",
+        "motion": "Gripping the bar and pulling the body upward until the chin is above the bar.",
+        "object": "A pull-up bar."
+    },
+    "Punch": {
+        "intent": "A person delivering a forceful strike with their fist.",
+        "motion": "A rapid extension of the arm to hit a target with the knuckles.",
+        "object": "A target (like a punching bag) or an opponent."
+    },
+    "PushUps": {
+        "intent": "A person performing a chest exercise by lowering and raising their body.",
+        "motion": "Lowering the body toward the floor by bending the arms and then pushing back up.",
+        "object": "A flat floor or exercise mat."
+    },
+    "Rafting": {
+        "intent": "A group of people navigating a river in an inflatable raft.",
+        "motion": "Synchronized paddling with oars to steer through rapids.",
+        "object": "An inflatable raft and paddles."
+    },
+    "RockClimbingIndoor": {
+        "intent": "A person climbing a vertical wall with artificial handholds and footholds.",
+        "motion": "Pulling and pushing movements of the limbs to ascend the climbing wall.",
+        "object": "An indoor climbing wall and climbing shoes."
+    },
+    "RopeClimbing": {
+        "intent": "A person ascending a thick rope suspended from above.",
+        "motion": "Pulling with the arms and gripping with the legs to climb upward.",
+        "object": "A thick, vertical climbing rope."
+    },
+    "Rowing": {
+        "intent": "A person or team propelling a boat through water using oars.",
+        "motion": "A rhythmic, backwards-pulling motion of the arms and torso with oars.",
+        "object": "A rowing boat (shell) and oars."
+    },
+    "SalsaSpin": {
+        "intent": "A person performing a rapid turn or spin during a salsa dance.",
+        "motion": "A quick, rhythmic rotation of the body on one or both feet.",
+        "object": "A dance floor and often a dance partner."
+    },
+    "ShavingBeard": {
+        "intent": "A person removing facial hair using a razor or electric shaver.",
+        "motion": "Careful, repetitive gliding strokes of a razor across the face and neck.",
+        "object": "A razor, shaving cream, and a mirror."
+    },
+    "Shotput": {
+        "intent": "An athlete throwing a heavy metal ball as far as possible.",
+        "motion": "A powerful pushing or 'putting' motion from the shoulder after a glide or spin.",
+        "object": "A metal shot (ball) and a throwing circle."
+    },
+    "SkateBoarding": {
+        "intent": "A person riding and performing tricks on a skateboard.",
+        "motion": "Pushing with one foot to gain speed and using the feet to steer or flip the board.",
+        "object": "A skateboard and often a skate park."
+    },
+    "Skiing": {
+        "intent": "A person sliding down a snow-covered slope on skis.",
+        "motion": "Rhythmic side-to-side movements to steer and maintain balance while descending.",
+        "object": "Skis, ski poles, and snow."
+    },
+    "Skijet": {
+        "intent": "A person riding a motorized personal watercraft (Jet Ski) at high speed.",
+        "motion": "Steering the watercraft across the surface of the water while bouncing on waves.",
+        "object": "A jet ski (personal watercraft) and a body of water."
+    },
+    "SkyDiving": {
+        "intent": "A person jumping from an aircraft and falling through the air before opening a parachute.",
+        "motion": "Falling in a spread-eagle position followed by gliding after parachute deployment.",
+        "object": "A parachute and an aircraft."
+    },
+    "SoccerJuggling": {
+        "intent": "A person keeping a soccer ball in the air using their feet, knees, or head.",
+        "motion": "A series of rhythmic taps and kicks to prevent the ball from hitting the ground.",
+        "object": "A soccer ball."
+    },
+    "SoccerPenalty": {
+        "intent": "A soccer player kicking the ball from the penalty spot toward the goal.",
+        "motion": "A short run-up followed by a powerful kick to strike the ball past the goalkeeper.",
+        "object": "A soccer ball and a goal net."
+    },
+    "StillRings": {
+        "intent": "A gymnast performing strength and balance moves on two suspended rings.",
+        "motion": "Swinging, holding static positions (like the iron cross), and dismounting with a flip.",
+        "object": "Two gymnastics rings and a landing mat."
+    },
+    "SumoWrestling": {
+        "intent": "Two sumo wrestlers competing to push each other out of a circular ring.",
+        "motion": "A powerful initial charge followed by pushing and grappling movements.",
+        "object": "A circular ring (dohyo) and sumo wrestlers."
+    },
+    "Surfing": {
+        "intent": "A person riding on the crest of a breaking wave using a surfboard.",
+        "motion": "Standing up on the board and balancing while sliding along the face of a wave.",
+        "object": "A surfboard and ocean waves."
+    },
+    "Swing": {
+        "intent": "A person moving back and forth on a suspended seat.",
+        "motion": "Rhythmic pumping of the legs to increase the height of the swinging arc.",
+        "object": "A playground swing set."
+    },
+    "TableTennisShot": {
+        "intent": "A player hitting a small ball across a table with a paddle.",
+        "motion": "Quick, precise swings of the paddle to strike the ball over the net.",
+        "object": "A table tennis table, paddle, and ball."
+    },
+    "TaiChi": {
+        "intent": "A person performing a series of slow, graceful martial arts movements.",
+        "motion": "Slow, fluid, and continuous transitions between various poses and stances.",
+        "object": "An open space, often outdoors."
+    },
+    "TennisSwing": {
+        "intent": "A tennis player hitting a ball with a racket toward the opponent's court.",
+        "motion": "A full-body rotation followed by a powerful swing (forehand or backhand) of the racket.",
+        "object": "A tennis racket and a tennis ball."
+    },
+    "ThrowDiscus": {
+        "intent": "An athlete throwing a heavy disc-shaped object as far as possible.",
+        "motion": "A rapid rotational movement followed by a powerful release of the discus.",
+        "object": "A discus and a throwing circle."
+    },
+    "TrampolineJumping": {
+        "intent": "A person bouncing and performing acrobatic moves on a trampoline.",
+        "motion": "Repetitive vertical jumping followed by flips or twists in the air.",
+        "object": "A trampoline."
+    },
+    "Typing": {
+        "intent": "A person pressing keys on a computer keyboard to enter text.",
+        "motion": "Rapid, rhythmic movements of the fingers across the keyboard keys.",
+        "object": "A computer keyboard."
+    },
+    "UnevenBars": {
+        "intent": "A female gymnast performing routines on two horizontal bars at different heights.",
+        "motion": "Swinging, transitioning between bars, and flipping moves with grace and power.",
+        "object": "Two uneven bars and a gymnastics mat."
+    },
+    "VolleyballSpiking": {
+        "intent": "A volleyball player hitting the ball forcefully downward over the net.",
+        "motion": "A jumping approach followed by a powerful overhead strike of the ball.",
+        "object": "A volleyball and a net."
+    },
+    "WalkingWithDog": {
+        "intent": "A person walking for exercise or leisure while leading a dog on a leash.",
+        "motion": "A steady walking pace while holding a leash connected to a dog.",
+        "object": "A dog and a leash."
+    },
+    "WallPushups": {
+        "intent": "A person performing push-ups while leaning against a wall.",
+        "motion": "Lowering the chest toward the wall by bending the arms and then pushing back.",
+        "object": "A flat wall surface."
+    },
+    "WritingOnBoard": {
+        "intent": "A person writing text or drawing on a large board (chalkboard or whiteboard).",
+        "motion": "A rhythmic movement of the arm and hand using a marker or piece of chalk.",
+        "object": "A whiteboard or chalkboard and a marker or chalk."
+    },
+    "YoYo": {
+        "intent": "A person performing tricks with a yo-yo on a string.",
+        "motion": "Rhythmic vertical or circular movements of the hand to control the yo-yo's motion.",
+        "object": "A yo-yo and a string."
+    }
+}
