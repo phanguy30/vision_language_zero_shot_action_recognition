@@ -6,7 +6,7 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 
 ## 📊 Performance Comparison
 
-| Method | Accuracy | Latency (Avg/Clip) | Approach Type |
+| Method | Accuracy | Latency (Avg/Frame) | Approach Type |
 | :--- | :--- | :--- | :--- |
 | **X-CLIP (Regular)** | **83.66%** | **0.022s** | Temporal-Aware Prompting |
 | **X-CLIP (SP)** | 74.68% | 0.024s | Semantic Decomposition + Temporal-Awareness |
@@ -14,7 +14,8 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 | **Qwen-VL** | 65.90% | 0.23s | VLM Image Captioning |
 
 > [!NOTE]
-> Latency is measured per video clip (averaging 8 frames per clip). X-CLIP models utilize the `microsoft/xclip-large-patch14` architecture.
+> X-CLIP models utilize the microsoft/xclip-large-patch14 architecture, while standard CLIP models utilize the openai/clip-vit-large-patch14 architecture.
+> Qwen/Qwen2.5-VL-3B-Instruct was used for Qwen
 
 ---
 
