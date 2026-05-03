@@ -8,10 +8,10 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 
 | Method | Accuracy | Latency (Avg/Clip) | Approach Type |
 | :--- | :--- | :--- | :--- |
-| **X-CLIP (Regular)** | **83.66%** | **0.18s** | Temporal-Aware Prompting |
-| **X-CLIP (SP)** | 74.68% | 0.19s | Semantic Decomposition + Temporal-Awareness |
-| **SP-CLIP** | 73.22% | 0.24s | Semantic Decomposition |
-| **Qwen-VL** | 65.90% | 1.35s | VLM Image Captioning |
+| **X-CLIP (Regular)** | **83.66%** | **0.03s** | Temporal-Aware Prompting |
+| **X-CLIP (SP)** | 74.68% | 0.03s | Semantic Decomposition + Temporal-Awareness |
+| **SP-CLIP** | 73.22% | 0.03s | Semantic Decomposition |
+| **Qwen-VL** | 65.90% | 0.23s | VLM Image Captioning |
 
 > [!NOTE]
 > Latency is measured per video clip (averaging 8 frames per clip). X-CLIP models utilize the `microsoft/xclip-large-patch14` architecture.
