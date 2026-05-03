@@ -42,6 +42,8 @@ This baseline method leverages the standard **CLIP** (ViT-L/14) model by decompo
 This approach utilizes **Qwen-VL**, a large-scale vision-language model capable of understanding images and text in a unified space.
 
 - **Implementation**: The model is prompted directly with a video clip (sampled at 1 FPS). We provide the entire list of 101 possible labels and ask it to select the most appropriate one.
+- **Prompting**: The model is constrained by a closed-set instruction: "Identify the action in this video from the following list: {labels_str}. Output only the exact label" name.
+
 - **Latency**: Higher latency compared to CLIP-based methods due to the large parameter count and long prompt context.
 
 ---
