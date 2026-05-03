@@ -1,0 +1,5 @@
+Model,Method,Accuracy (%),Latency (s/clip),Latency (s/frame)
+CLIP (ViT-L/14),Semantic Prompting (SP),73.22,0.2400,0.0300
+X-CLIP (ViT-L/14),Semantic Prompting (SP),74.68,0.1920,0.0240
+X-CLIP (ViT-L/14),Regular Prompting,83.66,0.1800,0.0225
+Qwen-VL-Chat,Zero-Shot (Label Selection),65.90,1.3500,0.2300
