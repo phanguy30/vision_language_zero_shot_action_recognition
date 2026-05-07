@@ -108,6 +108,40 @@ def stack_sp_embeddings(sp_dictionary):
         action_classes
     )
 
+def precompute_action_clip(prompt_path):
+    """
+    Loads ActionCLIP-style prompts from JSON and precomputes
+    text embeddings. If multiple templates are provided per class,
+    their embeddings are averaged.
+    """
+    with open(prompt_path, 'r') as f:
+        prompts = json.load(f)
+
+    dictionary = {}
+    print(f"Precomputing embeddings for {len(prompts)} classes (ActionCLIP Style)...")
+
+    for action_class, prompt_list in prompts.items():
+        if isinstance(prompt_list, str):
+            prompt_list = [prompt_list]
+
+        feat_list = []
+        for p in prompt_list:
+            feat_list.append(extract_text_features(p))
+
+        # Average and re-normalize
+        avg_feat = torch.mean(torch.cat(feat_list, dim=0), dim=0, keepdim=True)
+        avg_feat = avg_feat / avg_feat.norm(dim=-1, keepdim=True)
+
+        dictionary[action_class] = avg_feat
+
+    return dictionary
+
+def stack_action_clip(dictionary):
+    """Stacks per-class embeddings into a single matrix."""
+    action_classes = list(dictionary.keys())
+    feat_list = [dictionary[cls] for cls in action_classes]
+    return torch.cat(feat_list, dim=0), action_classes
+
 # --- 4. Main Inference Engine ---
 
 def run_sp_clip_inference(video_frames: list, sp_matrices):
@@ -137,6 +171,26 @@ def run_sp_clip_inference(video_frames: list, sp_matrices):
         "motion_score": motion_scores[0, predicted_idx].item(), 
         "object_score": object_scores[0, predicted_idx].item(), 
         "final_score": final_scores[0, predicted_idx].item()
+    }
+
+
+def run_action_clip_inference(video_frames: list, matrices):
+    """Runs ActionCLIP-style inference with OpenCLIP."""
+    text_mat, action_classes = matrices
+
+    # 1. Get video embedding
+    video_tensor = extract_sp_clip_features_list(video_frames)  # [1, Dim]
+
+    # 2. Similarity: [1, Dim] @ [Dim, NumClasses] -> [1, NumClasses]
+    scores = video_tensor @ text_mat.T
+
+    # 3. Predict
+    predicted_idx = torch.argmax(scores).item()
+    predicted_class = action_classes[predicted_idx]
+
+    return {
+        "predicted_class": predicted_class,
+        "final_score":     scores[0, predicted_idx].item()
     }
 
 

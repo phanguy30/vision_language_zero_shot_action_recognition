@@ -9,6 +9,7 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 | Method | Accuracy | Latency (Avg/Clip) | Approach Type |
 | :--- | :--- | :--- | :--- |
 | **X-CLIP (Regular)** | **83.66%** | **0.18s** | Temporal-Aware Prompting |
+| **CLIP (Regular)** | 77.35% | 0.24s | Averaged Template Prompting |
 | **X-CLIP (SP)** | 74.68% | 0.19s | Semantic Decomposition + Temporal-Awareness |
 | **SP-CLIP** | 73.22% | 0.24s | Semantic Decomposition |
 | **Qwen-VL** | 65.90% | 1.35s | VLM Image Captioning |
@@ -27,7 +28,19 @@ This method utilizes **X-CLIP**, a Microsoft adaptation of CLIP designed specifi
 - **Semantic Prompting (SP)**: Applies the same semantic decomposition logic used in SP-CLIP (Intent, Motion, Object) but leverages X-CLIP's video encoder for better temporal feature extraction.
 - **Efficiency**: Highly optimized for 8-frame sampling, providing the best trade-off between speed and accuracy.
 
-### 2. SP-CLIP (Semantic Prompting)
+### 2. CLIP (Regular)
+This method utilizes the standard **CLIP** (ViT-L/14) model by decomposing complex action labels into more descriptive semantic components.
+
+- **Implementation**: We aggregate embeddings from multiple prompts for each class and then find the class with the highest similarity to the video frames.
+
+- **Example** Action "Archery":
+    - **Prompt Templates**: 
+        - "a person is [LABEL]"
+        - "an example of [LABEL]"
+        - "a demonstration of [LABEL]"
+
+
+### 3. SP-CLIP (Semantic Prompting)
 This baseline method leverages the standard **CLIP** (ViT-L/14) model by decomposing complex action labels into more descriptive semantic components.
 
 - **Implementation**: We break down each of the 101 action classes into three semantic layers: **Intent**, **Motion**, and **Object**. 
@@ -37,7 +50,7 @@ This baseline method leverages the standard **CLIP** (ViT-L/14) model by decompo
   - *Motion*: "A slow tensioning of the arms followed by a sudden release."
   - *Object*: "A bow, an arrow, and a circular target board."
 
-### 3. Qwen-VL (Vision-Language Model)
+### 4. Qwen-VL (Vision-Language Model)
 This approach utilizes **Qwen-VL**, a large-scale vision-language model capable of understanding images and text in a unified space.
 
 - **Implementation**: The model is prompted directly with a video clip (sampled at 1 FPS). We provide the entire list of 101 possible labels and ask it to select the most appropriate one.
