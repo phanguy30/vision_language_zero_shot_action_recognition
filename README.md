@@ -8,15 +8,17 @@ This repository explores state-of-the-art vision-language approaches for **Zero-
 
 | Method | Accuracy | Latency (Avg/Frame) | Approach Type |
 | :--- | :--- | :--- | :--- |
-| **X-CLIP (Regular)** | **83.66%** | **0.18s** | Temporal-Aware Prompting |
-| **CLIP (Regular)** | 77.35% | 0.24s | Averaged Template Prompting |
-| **X-CLIP (SP)** | 74.68% | 0.19s | Semantic Decomposition + Temporal-Awareness |
-| **SP-CLIP** | 73.22% | 0.24s | Semantic Decomposition |
-| **Qwen-VL** | 65.90% | 1.35s | VLM Image Captioning |
+| **X-CLIP (Regular)** | **83.66%** | **0.023s** | Temporal-Aware Prompting |
+| **EVA CLIP (Regular)** | 79.46% | 0.022s* | Averaged Template Prompting |
+| **CLIP (Regular)** | 77.35% | 0.030s | Averaged Template Prompting |
+| **X-CLIP (SP)** | 74.68% | 0.024s | Semantic Decomposition + Temporal-Awareness |
+| **SP-CLIP** | 73.22% | 0.030s | Semantic Decomposition |
+| **Qwen-VL** | 65.90% | 0.226s | VLM Image Captioning |
 
 > [!NOTE]
-> X-CLIP models utilize the microsoft/xclip-large-patch14 architecture, while standard CLIP models utilize the openai/clip-vit-large-patch14 architecture.
-> Qwen/Qwen2.5-VL-3B-Instruct was used for Qwen
+> X-CLIP models utilize the microsoft/xclip-large-patch14 architecture, standard CLIP models utilize the openai/clip-vit-large-patch14 architecture, and EVA CLIP utilizes the EVA02-L-14 architecture.
+> Qwen/Qwen2.5-VL-3B-Instruct was used for Qwen.
+> *EVA CLIP latency is significantly higher because the model was forced to run on the CPU (it encounters infinite hangs when compiling on Apple Silicon MPS).
 
 ---
 
@@ -29,8 +31,8 @@ This method utilizes **X-CLIP**, a Microsoft adaptation of CLIP designed specifi
 - **Semantic Prompting (SP)**: Applies the same semantic decomposition logic used in SP-CLIP (Intent, Motion, Object) but leverages X-CLIP's video encoder for better temporal feature extraction.
 - **Efficiency**: Highly optimized for 8-frame sampling, providing the best trade-off between speed and accuracy.
 
-### 2. CLIP (Regular)
-This method utilizes the standard **CLIP** (ViT-L/14) model by decomposing complex action labels into more descriptive semantic components.
+### 2. CLIP/EVA-02 (Regular)
+This method utilizes the standard **CLIP** (ViT-L/14) and **EVA-02-L-14** models by decomposing complex action labels into more descriptive semantic components.
 
 - **Implementation**: We aggregate embeddings from multiple prompts for each class and then find the class with the highest similarity to the video frames.
 

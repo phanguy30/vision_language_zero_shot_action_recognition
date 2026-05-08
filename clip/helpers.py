@@ -12,18 +12,23 @@ from datasets import load_dataset
 
 # --- 1. Setup & Model Loading ---
 if torch.backends.mps.is_available():
-    device = torch.device("mps")
+    print("MPS is available, but EVA02-L-14 is known to hang indefinitely on Mac MPS.")
+    print("Forcing device to CPU to avoid the hang...")
+    device = torch.device("cpu")
 elif torch.cuda.is_available():
     device = torch.device("cuda")
 else:  
     device = torch.device("cpu")
 
+print("Initializing EVA02-L-14 model (this might take a moment to load weights into memory)...")
 model, _, preprocess = open_clip.create_model_and_transforms(
-    'ViT-L-14', 
-    pretrained='openai'  
+    "EVA02-L-14",
+    pretrained="merged2b_s4b_b131k"
 )
+print(f"Moving model to {device}...")
 model = model.to(device).eval()
-tokenizer = open_clip.get_tokenizer('ViT-L-14')
+tokenizer = open_clip.get_tokenizer("EVA02-L-14")
+print("Model loaded successfully!")
 
 # --- 2. Optimized Extraction Functions ---
 
